@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+require 'twit_sucker'
+
+path = ARGV[0]
+
+ARGV.delete_at(0)
+
+TwitSucker.run(path,ARGV)
