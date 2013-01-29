@@ -22,8 +22,7 @@ class TwitSucker
 		 i = 100
 		 stream.each_item do |item|
    		  file = File.open(Time.now.to_s+i.to_s, 'w')
-   		  file << JSON.parse(item)['text']
-    		  puts JSON.parse(item)['text']
+   		  file << JSON.parse(item)['text']    	
 		  file.close
 		  
 		  if i<999 
