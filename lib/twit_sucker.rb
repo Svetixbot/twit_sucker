@@ -15,7 +15,7 @@ class TwitSucker
 
  		 stream = Twitter::JSONStream.connect(
   		  :path    => '/1/statuses/filter.json',
-  		  :auth    => 'SFilimonova:QA3s4NLT',
+  		  :auth    => 'login:pas',
    		  :method  => 'POST',
    		  :content => 'track=' + magic_words.join(',')
  		 )
